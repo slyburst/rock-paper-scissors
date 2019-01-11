@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
   <script>
+    function computerPlay() {
+      switch (Math.floor(Math.random() * 3)) {
+        case 0:
+          computerHand = "Rock";
+          break;
+        case 1:
+          computerHand = "Paper";
+          break;
+        case 2:
+          computerHand = "Scissors";
+          break;
+        default:
+          computerHand = "ERROR 1001";
+      };
+      return computerHand;
+    };
+
+    console.log (computerPlay());
+
+
   </script>
 </html>
